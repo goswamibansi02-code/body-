@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brew & Bean | Coffee House</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+
+            <a href="#home" class="logo">
+                <span>☕</span> Brew & Bean
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+        </nav>
+    </header>
+
+
+    <!-- HOME -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+            <p class="small-title">WELCOME TO BREW & BEAN</p>
+
+            <h1>Fresh Coffee,<br>
+                <span>Warm Moments.</span>
+            </h1>
+
+            <p>
+                Start your day with freshly brewed coffee,
+                delicious bites and a cozy atmosphere.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#menu" class="btn primary-btn">Explore Menu</a>
+                <a href="#contact" class="btn second-btn">Contact Us</a>
+            </div>
+        </div>
+
+        <div class="hero-coffee">
+            <div class="coffee-circle">
+                ☕
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+
+        <div class="about-image">
+            <div class="about-cup">☕</div>
+        </div>
+
+        <div class="about-content">
+
+            <p class="section-label">ABOUT US</p>
+
+            <h2>A Little Coffee,<br>
+                A Lot of Happiness.</h2>
+
+            <p>
+                At Brew & Bean, coffee is more than just a drink.
+                It's a small moment of happiness in your busy day.
+            </p>
+
+            <p>
+                We use carefully selected coffee beans and prepare
+                every cup with love, passion and a little creativity.
+            </p>
+
+            <div class="about-points">
+                <div>
+                    <strong>☕</strong>
+                    <span>Freshly Brewed</span>
+                </div>
+
+                <div>
+                    <strong>🌱</strong>
+                    <span>Quality Beans</span>
+                </div>
+
+                <div>
+                    <strong>🤎</strong>
+                    <span>Made With Love</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MENU -->
+    <section class="menu section" id="menu">
+
+        <div class="section-heading">
+            <p class="section-label">OUR MENU</p>
+            <h2>Choose Your Favourite</h2>
+            <p>Something warm, something chilled and everything delicious.</p>
+        </div>
+
+        <div class="menu-grid">
+
+            <div class="coffee-card">
+                <div class="coffee-img">☕</div>
+                <h3>Cappuccino</h3>
+                <p>Rich espresso with creamy milk foam.</p>
+                <div class="card-bottom">
+                    <strong>₹120</strong>
+                    <button onclick="openOrder('Cappuccino')">Order Now</button>
+                </div>
+            </div>
+
+            <div class="coffee-card">
+                <div class="coffee-img">🥤</div>
+                <h3>Cold Coffee</h3>
+                <p>Chilled creamy coffee with a smooth taste.</p>
+                <div class="card-bottom">
+                    <strong>₹140</strong>
+                    <button onclick="openOrder('Cold Coffee')">Order Now</button>
+                </div>
+            </div>
+
+            <div class="coffee-card">
+                <div class="coffee-img">☕</div>
+                <h3>Caffè Latte</h3>
+                <p>Soft espresso blended with steamed milk.</p>
+                <div class="card-bottom">
+                    <strong>₹130</strong>
+                    <button onclick="openOrder('Caffè Latte')">Order Now</button>
+                </div>
+            </div>
+
+            <div class="coffee-card">
+                <div class="coffee-img">🍫</div>
+                <h3>Mocha</h3>
+                <p>A delicious combination of coffee and chocolate.</p>
+                <div class="card-bottom">
+                    <strong>₹150</strong>
+                    <button onclick="openOrder('Mocha')">Order Now</button>
+                </div>
+            </div>
+
+            <div class="coffee-card">
+                <div class="coffee-img">🥛</div>
+                <h3>Caramel Coffee</h3>
+                <p>Sweet caramel blended with freshly brewed coffee.</p>
+                <div class="card-bottom">
+                    <strong>₹160</strong>
+                    <button onclick="openOrder('Caramel Coffee')">Order Now</button>
+                </div>
+            </div>
+
+            <div class="coffee-card">
+                <div class="coffee-img">🧋</div>
+                <h3>Hazelnut Frappe</h3>
+                <p>Cold, creamy and full of hazelnut flavour.</p>
+                <div class="card-bottom">
+                    <strong>₹170</strong>
+                    <button onclick="openOrder('Hazelnut Frappe')">Order Now</button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- GALLERY -->
+    <section class="gallery section" id="gallery">
+
+        <div class="section-heading">
+            <p class="section-label">OUR GALLERY</p>
+            <h2>Moments at Brew & Bean</h2>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-box">☕<span>Morning Brew</span></div>
+            <div class="gallery-box">🥐<span>Fresh Bites</span></div>
+            <div class="gallery-box">🫘<span>Premium Beans</span></div>
+            <div class="gallery-box">🍰<span>Sweet Treats</span></div>
+        </div>
+
+    </section>
+
+
+    <!-- REVIEWS -->
+    <section class="reviews section" id="reviews">
+
+        <div class="section-heading">
+            <p class="section-label">CUSTOMER LOVE</p>
+            <h2>What People Say</h2>
+        </div>
+
+        <div class="review-grid">
+
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                    "The coffee tastes amazing and the place has
+                    such a peaceful vibe."
+                </p>
+                <h4>— Aanya</h4>
+            </div>
+
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                    "Loved the cold coffee! Definitely coming back
+                    for another one."
+                </p>
+                <h4>— Riya</h4>
+            </div>
+
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                    "Fresh coffee, friendly service and a really
+                    cozy atmosphere."
+                </p>
+                <h4>— Arjun</h4>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+
+        <div class="contact-info">
+
+            <p class="section-label">GET IN TOUCH</p>
+
+            <h2>Let's Have<br>A Coffee!</h2>
+
+            <p>
+                Have a question or want to visit us?
+                Send us a message.
+            </p>
+
+            <div class="contact-details">
+                <p>📍 Bhavnagar, Gujarat</p>
+                <p>📞 +91 98765 43210</p>
+                <p>✉️ hello@brewandbean.com</p>
+            </div>
+
+        </div>
+
+        <form class="contact-form" onsubmit="sendMessage(event)">
+
+            <input type="text" id="contactName"
+                   placeholder="Your Name" required>
+
+            <input type="email" id="contactEmail"
+                   placeholder="Your Email" required>
+
+            <textarea id="contactMessage"
+                      placeholder="Your Message"
+                      rows="5" required></textarea>
+
+            <button type="submit" class="btn primary-btn">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- ORDER POPUP -->
+    <div class="order-overlay" id="orderBox">
+
+        <div class="order-form">
+
+            <button class="close-btn" onclick="closeOrder()">×</button>
+
+            <p class="section-label">PLACE YOUR ORDER</p>
+
+            <h2>Order Coffee</h2>
+
+            <form onsubmit="placeOrder(event)">
+
+                <input type="text" id="selectedCoffee"
+                       readonly>
+
+                <input type="text" id="customerName"
+                       placeholder="Your Name" required>
+
+                <input type="tel" id="customerPhone"
+                       placeholder="Phone Number" required>
+
+                <input type="number" id="coffeeQuantity"
+                       min="1" value="1"
+                       placeholder="Quantity" required>
+
+                <textarea id="orderNote"
+                          placeholder="Any special request?"
+                          rows="3"></textarea>
+
+                <button type="submit" class="btn primary-btn">
+                    Confirm Order
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            ☕ Brew & Bean
+        </div>
+
+        <p>
+            Good coffee. Good mood. Good moments.
+        </p>
+
+        <div class="socials">
+            <span>Instagram</span>
+            <span>Facebook</span>
+            <span>Twitter</span>
+        </div>
+
+        <p class="copyright">
+            © 2026 Brew & Bean. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
